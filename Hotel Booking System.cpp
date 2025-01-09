@@ -15,3 +15,7 @@ public:
     // Constructor to initialize room attributes.
     Room(int num, string t) : roomNumber(num), type(t), isOccupied(false) {}
 };
+
+class Customer {
+public:
+    string name; // Declare name
