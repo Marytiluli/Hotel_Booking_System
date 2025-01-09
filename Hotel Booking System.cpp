@@ -109,3 +109,16 @@ public:
             }
         }
     }
+    
+    // Search for a customer by name
+    void searchCustomer(string customerName) {
+        cout << "Searching for customer: " << customerName << endl;
+        for (const auto& customer : customers) {
+            if (customer.name == customerName) {
+                cout << "Customer Found: " << customer.name << ", Contact: " << customer.contact << endl;
+                return;
+            }
+        }
+        cout << "Customer not found.\n";
+    }
+};
