@@ -43,3 +43,8 @@ private:
 public:
     // Initialize rooms in Hotel constructor
     Hotel() {
+    	Hotel() {
+        rooms.push_back(Room(101, "Single"));
+        rooms.push_back(Room(102, "Double"));
+        rooms.push_back(Room(103, "Suite"));
+    }
