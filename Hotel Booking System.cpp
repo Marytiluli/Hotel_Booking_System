@@ -54,3 +54,22 @@ public:
         customers.push_back(Customer(name, contact));
         cout << "Customer added successfully.\n";
     }
+    
+    // Book a room for an existing customer
+    void bookRoom(int roomNumber, string customerName) {
+        for (auto& room : rooms) {
+            if (room.roomNumber == roomNumber && !room.isOccupied) {
+                for (auto& customer : customers) {
+                    if (customer.name == customerName) {
+                        room.isOccupied = true;
+                        bookings.push_back(Booking(room, customer));
+                        cout << "Room " << roomNumber << " booked for " << customerName << endl;
+                        return;
+                    }
+                }
+                cout << "Customer not found!" << endl;
+                return;
+            }
+        }
+        cout << "Room not available!" << endl;
+    }
