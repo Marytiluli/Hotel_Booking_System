@@ -39,3 +39,7 @@ private:
     vector<Room> rooms; // Vector to store rooms
     vector<Customer> customers; // Vector to store customers
     vector<Booking> bookings; // Vector to store bookings
+    
+public:
+    // Initialize rooms in Hotel constructor
+    Hotel() {
