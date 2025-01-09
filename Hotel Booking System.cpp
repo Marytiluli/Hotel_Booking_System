@@ -5,3 +5,7 @@
 
 // Add using namespace std
 using namespace std;
+
+class Room {
+public:
+    int roomNumber; // Declare roomNumber
