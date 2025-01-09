@@ -19,3 +19,4 @@ public:
 class Customer {
 public:
     string name; // Declare name
+    string contact; // Declare contact
