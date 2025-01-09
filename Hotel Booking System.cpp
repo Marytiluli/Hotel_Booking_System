@@ -143,3 +143,49 @@ int main() {
 
         string name, contact;
         int roomNumber;
+        
+        // Perform actions based on user choice
+        switch (choice) {
+            case 1:
+                cout << "Enter customer name: ";
+                cin.ignore(); 
+                getline(cin, name); 
+                cout << "Enter customer contact: ";
+                getline(cin, contact); 
+                hotel.addCustomer(name, contact); 
+                break;
+            case 2:
+                cout << "Enter room number to book: ";
+                cin >> roomNumber; 
+                cout << "Enter customer name: ";
+                cin.ignore(); 
+                getline(cin, name); 
+                hotel.bookRoom(roomNumber, name); 
+                break;
+            case 3:
+                cout << "Enter room number to check out: ";
+                cin >> roomNumber; 
+                hotel.checkOutRoom(roomNumber); 
+                break;
+            case 4:
+                hotel.showBookings(); 
+                break;
+            case 5:
+                hotel.showAvailableRooms(); 
+                break;
+            case 6:
+                cout << "Enter customer name to search: ";
+                cin.ignore(); 
+                getline(cin, name); 
+                hotel.searchCustomer(name); 
+                break;
+            case 7:
+                cout << "Exiting...\n";
+                break;
+            default:
+                cout << "Invalid choice. Try again.\n";
+        }
+    } while (choice != 7); 
+
+    return 0; 
+}
