@@ -24,3 +24,7 @@ public:
     // Constructor to initialize customer attributes.
     Customer(string n, string c) : name(n), contact(c) {}
 };
+
+class Booking {
+public:
+    Room room; // Declare room
