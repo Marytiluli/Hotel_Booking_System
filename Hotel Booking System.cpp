@@ -10,3 +10,4 @@ class Room {
 public:
     int roomNumber; // Declare roomNumber
     string type; // Declare type
+    bool isOccupied; // Declare isOccupied
