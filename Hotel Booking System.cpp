@@ -48,3 +48,9 @@ public:
         rooms.push_back(Room(102, "Double"));
         rooms.push_back(Room(103, "Suite"));
     }
+    
+    // Add a new customer
+    void addCustomer(string name, string contact) {
+        customers.push_back(Customer(name, contact));
+        cout << "Customer added successfully.\n";
+    }
