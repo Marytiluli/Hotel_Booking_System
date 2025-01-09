@@ -127,3 +127,19 @@ public:
 int main() {
 	Hotel hotel; // Create Hotel object
     int choice;
+    
+    // Main menu loop
+    do {
+        cout << "\n--- Hotel Booking System ---\n";
+        cout << "1. Add Customer\n";
+        cout << "2. Book Room\n";
+        cout << "3. Check Out Room\n";
+        cout << "4. Show Bookings\n";
+        cout << "5. Show Available Rooms\n";
+        cout << "6. Search Customer\n";
+        cout << "7. Exit\n";
+        cout << "Enter your choice: ";
+        cin >> choice;
+
+        string name, contact;
+        int roomNumber;
