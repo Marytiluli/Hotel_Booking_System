@@ -122,3 +122,6 @@ public:
         cout << "Customer not found.\n";
     }
 };
+
+// Main function
+int main() {
