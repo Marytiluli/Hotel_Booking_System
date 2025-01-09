@@ -125,3 +125,5 @@ public:
 
 // Main function
 int main() {
+	Hotel hotel; // Create Hotel object
+    int choice;
