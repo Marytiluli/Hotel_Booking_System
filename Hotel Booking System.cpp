@@ -28,3 +28,4 @@ public:
 class Booking {
 public:
     Room room; // Declare room
+    Customer customer; // Declare customer
