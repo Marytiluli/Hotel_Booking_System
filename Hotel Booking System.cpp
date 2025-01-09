@@ -73,3 +73,18 @@ public:
         }
         cout << "Room not available!" << endl;
     }
+    
+    // Check out a room and mark it as available
+    void checkOutRoom(int roomNumber) {
+        for (auto& room : rooms) {
+            if (room.roomNumber == roomNumber && room.isOccupied) {
+                room.isOccupied = false;
+                bookings.erase(remove_if(bookings.begin(), bookings.end(), [&](Booking& booking) {
+                    return booking.room.roomNumber == roomNumber;
+                }), bookings.end());
+                cout << "Room " << roomNumber << " checked out successfully.\n";
+                return;
+            }
+        }
+        cout << "Room is either not occupied or does not exist.\n";
+    }
