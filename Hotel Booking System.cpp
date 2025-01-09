@@ -33,3 +33,7 @@ public:
     // Constructor to initialize booking attributes.
     Booking(Room r, Customer c) : room(r), customer(c) {}
 };
+
+class Hotel {
+private:
+    vector<Room> rooms; // Vector to store rooms
