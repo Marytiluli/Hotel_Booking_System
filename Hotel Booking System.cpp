@@ -99,3 +99,13 @@ public:
             cout << "No current bookings.\n";
         }
     }
+    
+    // Display all available rooms
+    void showAvailableRooms() {
+        cout << "Available Rooms:" << endl;
+        for (const auto& room : rooms) {
+            if (!room.isOccupied) {
+                cout << "Room " << room.roomNumber << " (" << room.type << ")\n";
+            }
+        }
+    }
