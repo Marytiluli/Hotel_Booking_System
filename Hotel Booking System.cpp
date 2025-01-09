@@ -29,3 +29,7 @@ class Booking {
 public:
     Room room; // Declare room
     Customer customer; // Declare customer
+    
+    // Constructor to initialize booking attributes.
+    Booking(Room r, Customer c) : room(r), customer(c) {}
+};
