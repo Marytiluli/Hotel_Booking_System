@@ -88,3 +88,14 @@ public:
         }
         cout << "Room is either not occupied or does not exist.\n";
     }
+    
+    // Display all current bookings
+    void showBookings() {
+        cout << "Current Bookings:" << endl;
+        for (const auto& booking : bookings) {
+            cout << "Room " << booking.room.roomNumber << " booked by " << booking.customer.name << endl;
+        }
+        if (bookings.empty()) {
+            cout << "No current bookings.\n";
+        }
+    }
