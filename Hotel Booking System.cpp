@@ -20,3 +20,7 @@ class Customer {
 public:
     string name; // Declare name
     string contact; // Declare contact
+    
+    // Constructor to initialize customer attributes.
+    Customer(string n, string c) : name(n), contact(c) {}
+};
